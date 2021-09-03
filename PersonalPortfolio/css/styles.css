@@ -4,6 +4,11 @@ body {
     color: #40514E
 }
 
+.container {
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
 h1 {
     margin: 0px auto 0 auto;
     font-family: 'Sacramento', cursive;
@@ -171,7 +176,6 @@ label.logo {
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
-    font-family: ;
 }
 
 nav ul {
@@ -206,6 +210,10 @@ log.hover {
     margin-right: 40px;
     cursor: pointer;
     display: none;
+}
+
+.signup-title {
+    font-family: 'Billabong', sans-serif;
 }
 
 #check {
