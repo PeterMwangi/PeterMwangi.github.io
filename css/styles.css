@@ -1,12 +1,29 @@
+@font-face {
+    font-family: 'futura';
+    src: url(../fonts/futura/futura\ medium\ bt.ttf);
+}
+
+@font-face {
+    font-family: 'helvetica';
+    src: url(../fonts/helvetica/Helvetica\ Neue\ W01\ 66\ Medium\ It.ttf);
+}
+
 body {
     margin: 0;
     text-align: center;
-    color: #40514E
+    color: #000000;
+    font-family: 'futura';
+    min-height: 100vh;
+}
+
+.container {
+    overflow: hidden;
+    background-color: whitesmoke;
 }
 
 h1 {
     margin: 0px auto 0 auto;
-    font-family: 'Sacramento', cursive;
+    font-family: 'futura';
     font-size: 400%;
     color: #66bfbf;
 }
@@ -32,9 +49,13 @@ h3 {
 }
 
 .skill-row {
-    width: 50%;
+    width: 60%;
+    height: 100%;
     margin: 100px auto 100px auto;
     text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 2% 2%;
+    padding: 3%;
 }
 
 .image-seo {
@@ -159,7 +180,8 @@ a {
     box-sizing: border-box;
 }
 
-nav {
+.topnav {
+    overflow: hidden;
     background-color: #66bfbf;
     height: 80px;
     width: 100%;
@@ -171,7 +193,6 @@ label.logo {
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
-    font-family: ;
 }
 
 nav ul {
@@ -208,11 +229,28 @@ log.hover {
     display: none;
 }
 
+.signup-title {
+    font-family: 'Billabong', sans-serif;
+}
+
 #check {
     display: none;
 }
 
-@media (max-width: 952px) {
+@media (max-width:900px) {
+    body {
+        height: 100vh;
+        overflow: hidden;
+    }
+    .skill-row {
+        width: 60%;
+        height: 100%;
+        margin: 100px auto 100px auto;
+        text-align: left;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 2% 2%;
+        padding: 3%;
+    }
     label.logo {
         font-size: 30px;
         padding-left: 50px;
@@ -222,7 +260,7 @@ log.hover {
     }
 }
 
-@media (max-width: 858px) {
+@media (max-width: 900px) {
     .checkbtn {
         display: block;
     }
